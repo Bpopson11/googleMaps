@@ -39,7 +39,7 @@ gulp.task('serve', ['buildStart'], function(){
   });
   gulp.watch('./js/*.js', ['jsBrowserify', 'jshint', 'reload']);
   gulp.watch('./*.html', ['reload']);
-  gulp.watch('./scss/*.scss', ['cssBuild', 'reload']);
+  gulp.watch('./build/css/*.css', ['cssBuild', 'reload']);
   gulp.start('removeTmp');
 });
 /// end of serve task
@@ -51,7 +51,7 @@ gulp.task('reload', function() {
 
 // initial clean files
 gulp.task('initialClean', function(){
-  return del(['build', 'tmp']);
+  return del(['build/js', 'tmp']);
 });
 
 // removed tmp file
