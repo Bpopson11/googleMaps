@@ -22,5 +22,8 @@
     "jshint": "^2.9.1",
     "vinyl-source-stream": "^1.1.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "gmaps": "^0.4.23"
+  }
 }
