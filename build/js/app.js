@@ -258,7 +258,7 @@ var fact9 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area. Nike currently employs them for their new Nike+ FuelBand for pets.</p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -312,18 +312,20 @@ var marker11 = new google.maps.Marker( {
 
 
 /////Listeners//////
+///Mount Tabor
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        alert("You got it! Mount Tabor is a dormant volcano but to our knowledge no additional homeowners insurance is required.");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
 
+////Oregon Humane Society
 marker2.addListener('click', function() {
   infowindow2.open(map, marker2);
   $('.answer').click(function(currentButton){
@@ -336,6 +338,7 @@ marker2.addListener('click', function() {
   });
 });
 
+////Willamette River
 marker3.addListener('click', function() {
   infowindow3.open(map, marker3);
   $('.answer').click(function(currentButton){
@@ -348,6 +351,7 @@ marker3.addListener('click', function() {
   });
 });
 
+////Oaks Park
 marker4.addListener('click', function() {
   infowindow4.open(map, marker4);
   $('.answer').click(function(currentButton){
@@ -360,6 +364,7 @@ marker4.addListener('click', function() {
   });
 });
 
+////Forest Park
 marker5.addListener('click', function() {
   infowindow5.open(map, marker5);
   $('.answer').click(function(currentButton){
@@ -372,6 +377,7 @@ marker5.addListener('click', function() {
   });
 });
 
+/////Pittock Mansion
 marker6.addListener('click', function() {
   infowindow6.open(map, marker6);
   $('.answer').click(function(currentButton){
@@ -384,6 +390,7 @@ marker6.addListener('click', function() {
   });
 });
 
+////Rain or Shine Cafe
 marker7.addListener('click', function() {
   infowindow7.open(map, marker7);
   $('.answer').click(function(currentButton){
@@ -396,18 +403,21 @@ marker7.addListener('click', function() {
   });
 });
 
+////Collins Beach
 marker8.addListener('click', function() {
   infowindow8.open(map, marker8);
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        alert("You got it! And that one part is totally true. I definitely saw a man wearing nothing but a pirate hat once.");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
 
+
+/////Beaverton
 marker9.addListener('click', function() {
   infowindow9.open(map, marker9);
   $('.answer').click(function(currentButton){
@@ -420,6 +430,7 @@ marker9.addListener('click', function() {
   });
 });
 
+/////Lebanon
 marker10.addListener('click', function() {
   infowindow10.open(map, marker10);
   $('.answer').click(function(currentButton){
@@ -432,6 +443,7 @@ marker10.addListener('click', function() {
   });
 });
 
+////Government Island
 marker11.addListener('click', function() {
   infowindow11.open(map, marker11);
   $('.answer').click(function(currentButton){
@@ -714,7 +726,7 @@ var fact9 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area. Nike currently employs them for their new Nike+ FuelBand for pets.</p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -768,18 +780,20 @@ var marker11 = new google.maps.Marker( {
 
 
 /////Listeners//////
+///Mount Tabor
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        alert("You got it! Mount Tabor is a dormant volcano but to our knowledge no additional homeowners insurance is required.");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
 
+////Oregon Humane Society
 marker2.addListener('click', function() {
   infowindow2.open(map, marker2);
   $('.answer').click(function(currentButton){
@@ -792,6 +806,7 @@ marker2.addListener('click', function() {
   });
 });
 
+////Willamette River
 marker3.addListener('click', function() {
   infowindow3.open(map, marker3);
   $('.answer').click(function(currentButton){
@@ -804,6 +819,7 @@ marker3.addListener('click', function() {
   });
 });
 
+////Oaks Park
 marker4.addListener('click', function() {
   infowindow4.open(map, marker4);
   $('.answer').click(function(currentButton){
@@ -816,6 +832,7 @@ marker4.addListener('click', function() {
   });
 });
 
+////Forest Park
 marker5.addListener('click', function() {
   infowindow5.open(map, marker5);
   $('.answer').click(function(currentButton){
@@ -828,6 +845,7 @@ marker5.addListener('click', function() {
   });
 });
 
+/////Pittock Mansion
 marker6.addListener('click', function() {
   infowindow6.open(map, marker6);
   $('.answer').click(function(currentButton){
@@ -840,6 +858,7 @@ marker6.addListener('click', function() {
   });
 });
 
+////Rain or Shine Cafe
 marker7.addListener('click', function() {
   infowindow7.open(map, marker7);
   $('.answer').click(function(currentButton){
@@ -852,18 +871,21 @@ marker7.addListener('click', function() {
   });
 });
 
+////Collins Beach
 marker8.addListener('click', function() {
   infowindow8.open(map, marker8);
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        alert("You got it! And that one part is totally true. I definitely saw a man wearing nothing but a pirate hat once.");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
 
+
+/////Beaverton
 marker9.addListener('click', function() {
   infowindow9.open(map, marker9);
   $('.answer').click(function(currentButton){
@@ -876,6 +898,7 @@ marker9.addListener('click', function() {
   });
 });
 
+/////Lebanon
 marker10.addListener('click', function() {
   infowindow10.open(map, marker10);
   $('.answer').click(function(currentButton){
@@ -888,6 +911,7 @@ marker10.addListener('click', function() {
   });
 });
 
+////Government Island
 marker11.addListener('click', function() {
   infowindow11.open(map, marker11);
   $('.answer').click(function(currentButton){
