@@ -7,6 +7,8 @@ var map = new google.maps.Map(document.getElementById('map'), {
 
   });
 
+
+///Mount Tabor
 var fact1 = '<div class="content">'+
     '<div id="fact1">'+
     '</div>'+
@@ -26,13 +28,13 @@ var marker1 = new google.maps.Marker( {
 });
 
 
-
+///Oregon Humane Society
 var fact2 = '<div class="content">'+
     '<div id="fact2">'+
     '</div>'+
     '<h1 id="firstHeading2" class="firstHeading">Oregon Humane Society</h1>'+
     '<div id="bodyContent">'+
-    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
+    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow2 = new google.maps.InfoWindow( {
@@ -45,12 +47,13 @@ var marker2 = new google.maps.Marker( {
   title: ""
 });
 
+///Willamette River
 var fact3 = '<div class="content">'+
-    '<div id="fact4">'+
+    '<div id="fact3">'+
     '</div>'+
     '<h1 id="firstHeading3" class="firstHeading">Willamette River</h1>'+
     '<div id="bodyContent3">'+
-    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
+    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong ">False</button>'+
     '</div>';
 
 var infowindow3 = new google.maps.InfoWindow( {
@@ -63,12 +66,14 @@ var marker3 = new google.maps.Marker( {
   title: ""
 });
 
+
+///Oaks Park
 var fact4 = '<div class="content">'+
     '<div id="fact4">'+
     '</div>'+
     '<h1 id="firstHeading4" class="firstHeading">Oaks Park</h1>'+
     '<div id="bodyContent4">'+
-    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success answer" value="correct ">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow4 = new google.maps.InfoWindow( {
@@ -81,13 +86,13 @@ var marker4 = new google.maps.Marker( {
   title: ""
 });
 
-
+////Forest Park
 var fact5 = '<div class="content">'+
     '<div id="fact5">'+
     '</div>'+
     '<h1 id="firstHeading5" class="firstHeading">Forest Park</h1>'+
     '<div id="bodyContent5">'+
-    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success" value="wrong answer">True</button><button class="btn btn-danger" value="correct answer">False</button>'+
+    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow5 = new google.maps.InfoWindow( {
@@ -100,6 +105,8 @@ var marker5 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Pittock Mansion
 var fact6 = '<div class="content">'+
     '<div id="fact6">'+
     '</div>'+
@@ -118,6 +125,8 @@ var marker6 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Rain or Shine Coffee
 var fact7 = '<div class="content">'+
     '<div id="fact7">'+
     '</div>'+
@@ -136,12 +145,14 @@ var marker7 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Collins Beach
 var fact8 = '<div class="content">'+
     '<div id="fact8">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
     '<div id="bodyContent8">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -154,12 +165,14 @@ var marker8 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Beaverton
 var fact9 = '<div class="content">'+
     '<div id="fact9">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success">True</button><button class="btn btn-danger">False</button>'+
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -172,6 +185,17 @@ var marker9 = new google.maps.Marker( {
   title: ""
 });
 
+//////////END OF MARKER CODE/////////
+
+var trueFalse = function(currentButton){
+  var answer = currentButton.currentTarget.value;
+    if (answer == 'correct'){
+      alert("You got it!");
+    } else {
+      alert("Wah wah. Try again.");
+    }
+};
+
 
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
@@ -182,60 +206,103 @@ marker1.addListener('click', function() {
       } else {
         alert("Wah wah. Try again.");
       }
-  })
+  });
 });
-
-// var answer = $('.btn').val();
-//   if (answer == 'correct'){
-//     alert("You got it!");
-//   } else {
-//     alert("Wah wah. Try again.");
-//   }
-
-
-
-
-
-
 
 marker2.addListener('click', function() {
   infowindow2.open(map, marker2);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker3.addListener('click', function() {
   infowindow3.open(map, marker3);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker4.addListener('click', function() {
   infowindow4.open(map, marker4);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker5.addListener('click', function() {
   infowindow5.open(map, marker5);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker6.addListener('click', function() {
   infowindow6.open(map, marker6);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker7.addListener('click', function() {
   infowindow7.open(map, marker7);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker8.addListener('click', function() {
   infowindow8.open(map, marker8);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker9.addListener('click', function() {
   infowindow9.open(map, marker9);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 };
@@ -291,6 +358,8 @@ var map = new google.maps.Map(document.getElementById('map'), {
 
   });
 
+
+///Mount Tabor
 var fact1 = '<div class="content">'+
     '<div id="fact1">'+
     '</div>'+
@@ -310,13 +379,13 @@ var marker1 = new google.maps.Marker( {
 });
 
 
-
+///Oregon Humane Society
 var fact2 = '<div class="content">'+
     '<div id="fact2">'+
     '</div>'+
     '<h1 id="firstHeading2" class="firstHeading">Oregon Humane Society</h1>'+
     '<div id="bodyContent">'+
-    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
+    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow2 = new google.maps.InfoWindow( {
@@ -329,12 +398,13 @@ var marker2 = new google.maps.Marker( {
   title: ""
 });
 
+///Willamette River
 var fact3 = '<div class="content">'+
-    '<div id="fact4">'+
+    '<div id="fact3">'+
     '</div>'+
     '<h1 id="firstHeading3" class="firstHeading">Willamette River</h1>'+
     '<div id="bodyContent3">'+
-    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
+    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong ">False</button>'+
     '</div>';
 
 var infowindow3 = new google.maps.InfoWindow( {
@@ -347,12 +417,14 @@ var marker3 = new google.maps.Marker( {
   title: ""
 });
 
+
+///Oaks Park
 var fact4 = '<div class="content">'+
     '<div id="fact4">'+
     '</div>'+
     '<h1 id="firstHeading4" class="firstHeading">Oaks Park</h1>'+
     '<div id="bodyContent4">'+
-    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success answer" value="correct ">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow4 = new google.maps.InfoWindow( {
@@ -365,13 +437,13 @@ var marker4 = new google.maps.Marker( {
   title: ""
 });
 
-
+////Forest Park
 var fact5 = '<div class="content">'+
     '<div id="fact5">'+
     '</div>'+
     '<h1 id="firstHeading5" class="firstHeading">Forest Park</h1>'+
     '<div id="bodyContent5">'+
-    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success" value="wrong answer">True</button><button class="btn btn-danger" value="correct answer">False</button>'+
+    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow5 = new google.maps.InfoWindow( {
@@ -384,6 +456,8 @@ var marker5 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Pittock Mansion
 var fact6 = '<div class="content">'+
     '<div id="fact6">'+
     '</div>'+
@@ -402,6 +476,8 @@ var marker6 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Rain or Shine Coffee
 var fact7 = '<div class="content">'+
     '<div id="fact7">'+
     '</div>'+
@@ -420,12 +496,14 @@ var marker7 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Collins Beach
 var fact8 = '<div class="content">'+
     '<div id="fact8">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
     '<div id="bodyContent8">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -438,12 +516,14 @@ var marker8 = new google.maps.Marker( {
   title: ""
 });
 
+
+////Beaverton
 var fact9 = '<div class="content">'+
     '<div id="fact9">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success">True</button><button class="btn btn-danger">False</button>'+
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -456,6 +536,17 @@ var marker9 = new google.maps.Marker( {
   title: ""
 });
 
+//////////END OF MARKER CODE/////////
+
+var trueFalse = function(currentButton){
+  var answer = currentButton.currentTarget.value;
+    if (answer == 'correct'){
+      alert("You got it!");
+    } else {
+      alert("Wah wah. Try again.");
+    }
+};
+
 
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
@@ -466,60 +557,103 @@ marker1.addListener('click', function() {
       } else {
         alert("Wah wah. Try again.");
       }
-  })
+  });
 });
-
-// var answer = $('.btn').val();
-//   if (answer == 'correct'){
-//     alert("You got it!");
-//   } else {
-//     alert("Wah wah. Try again.");
-//   }
-
-
-
-
-
-
 
 marker2.addListener('click', function() {
   infowindow2.open(map, marker2);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker3.addListener('click', function() {
   infowindow3.open(map, marker3);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker4.addListener('click', function() {
   infowindow4.open(map, marker4);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker5.addListener('click', function() {
   infowindow5.open(map, marker5);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker6.addListener('click', function() {
   infowindow6.open(map, marker6);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker7.addListener('click', function() {
   infowindow7.open(map, marker7);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker8.addListener('click', function() {
   infowindow8.open(map, marker8);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 marker9.addListener('click', function() {
   infowindow9.open(map, marker9);
-  var answer = $('.btn').val();
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
 });
 
 };
