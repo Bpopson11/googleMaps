@@ -269,6 +269,44 @@ var marker9 = new google.maps.Marker( {
   map: map,
   title: ""
 });
+
+////Lebanon
+var fact10 = '<div class="content">'+
+    '<div id="fact10">'+
+    '</div>'+
+    '<h1 id="firstHeading10" class="firstHeading">Lebanon</h1>'+
+    '<div id="bodyContent10">'+
+    '<p><b>Lebanon</b> can be found south east of Salem. It is home to the world headquarters of <a href="http://entek.com/">ENTEK</a>, and the College of Osteopathic Medicine of the Pacific, Northwest. Interestingly enough, it\'s actually pronounced leb-i-nin. Take that Aloha!</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
+    '</div>';
+
+var infowindow10 = new google.maps.InfoWindow( {
+  content: fact10
+});
+
+var marker10 = new google.maps.Marker( {
+  position: {lat: 44.536512, lng: -122.907034},
+  map: map,
+  title: ""
+});
+
+////Government Island
+var fact11 = '<div class="content">'+
+    '<div id="fact11">'+
+    '</div>'+
+    '<h1 id="firstHeading11" class="firstHeading">Government Island</h1>'+
+    '<div id="bodyContent11">'+
+    '<p><b>Government Island</b> is just about smack dab in the middle of the Columbia River! It is only accessible by boat, or canoe, or kayak, or one very determined person on a inner tube. The military appropriated the island in 1850 and named it. Not sure why it isn\'t Military Island or something, but oh well. Lewis and Clark visited the island in 1805. They decided not to stay.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
+    '</div>';
+
+var infowindow11 = new google.maps.InfoWindow( {
+  content: fact11
+});
+
+var marker11 = new google.maps.Marker( {
+  position: {lat: 45.578514, lng: -122.5120755},
+  map: map,
+  title: ""
+});
 //////////END OF MARKER CODE/////////
 
 
@@ -374,10 +412,36 @@ marker9.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        $('.response').text("You got it!");
+        alert("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
+
+marker10.addListener('click', function() {
+  infowindow10.open(map, marker10);
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
+});
+
+marker11.addListener('click', function() {
+  infowindow11.open(map, marker11);
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  });
+});
+
+
 };
