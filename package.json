@@ -22,8 +22,16 @@
     "jshint": "^2.9.1",
     "vinyl-source-stream": "^1.1.0"
   },
-  "description": "",
   "dependencies": {
     "gmaps": "^0.4.23"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aftondowney/googleMaps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aftondowney/googleMaps/issues"
+  },
+  "homepage": "https://github.com/aftondowney/googleMaps#readme",
+  "description": ""
 }
