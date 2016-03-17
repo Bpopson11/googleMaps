@@ -12,7 +12,7 @@ var fact1 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading" class="firstHeading">Mount Tabor</h1>'+
     '<div id="bodyContent">'+
-    '<p><b>Mount Tabor</b>, is a volcano. Well it was. Portland is just one of two cities in the US that have a dormant volcano found within city limits. While there are no current predictions of it reawakening anytime soon, residents in the area are required by the state to have additional volcano coverage included in their homeowners insurance. Just in case.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger">False</button>'+
+    '<p><b>Mount Tabor</b>, is a volcano. Well it was. Portland is just one of two cities in the US that have a dormant volcano found within city limits. While there are no current predictions of it reawakening anytime soon, residents in the area are required by the state to have additional volcano coverage included in their homeowners insurance. Just in case.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow1 = new google.maps.InfoWindow( {
@@ -32,7 +32,7 @@ var fact2 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading2" class="firstHeading">Oregon Humane Society</h1>'+
     '<div id="bodyContent">'+
-    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
     '</div>';
 
 var infowindow2 = new google.maps.InfoWindow( {
@@ -50,7 +50,7 @@ var fact3 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading3" class="firstHeading">Willamette River</h1>'+
     '<div id="bodyContent3">'+
-    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
     '</div>';
 
 var infowindow3 = new google.maps.InfoWindow( {
@@ -68,7 +68,7 @@ var fact4 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading4" class="firstHeading">Oaks Park</h1>'+
     '<div id="bodyContent4">'+
-    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow4 = new google.maps.InfoWindow( {
@@ -87,7 +87,7 @@ var fact5 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading5" class="firstHeading">Forest Park</h1>'+
     '<div id="bodyContent5">'+
-    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger" value="correct">False</button>'+
+    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success" value="wrong answer">True</button><button class="btn btn-danger" value="correct answer">False</button>'+
     '</div>';
 
 var infowindow5 = new google.maps.InfoWindow( {
@@ -105,7 +105,7 @@ var fact6 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading6" class="firstHeading">Pittock Mansion</h1>'+
     '<div id="bodyContent6">'+
-    '<p><b>Pittock Mansion</b> is a French Renaissance-style château in the West Hills of Portland. The mansion was originally built in 1909 as a private home for London-born publisher Henry Pittock and his wife, Georgiana. It is said that the Mansion is haunted by the ghosts of Henry and Georgiana. Visitors have reported hearing mutterings and complaints about the influx of Californians to the city.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger" value="correct">False</button>'+
+    '<p><b>Pittock Mansion</b> is a French Renaissance-style château in the West Hills of Portland. The mansion was originally built in 1909 as a private home for London-born publisher Henry Pittock and his wife, Georgiana. It is said that the Mansion is haunted by the ghosts of Henry and Georgiana. Visitors have reported hearing mutterings and complaints about the influx of Californians to the city.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow6 = new google.maps.InfoWindow( {
@@ -123,7 +123,7 @@ var fact7 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading7" class="firstHeading">Rain or Shine</h1>'+
     '<div id="bodyContent7">'+
-    '<p><b>Rain or Shine</b> coffee is a cute shop neslted in SE off Division. Known for their eclectic variety of drinks, the Lavendar or Cardamom lattes are local favorites. What makes this shop unique though is that in order to qualify to be a barista, you must have at least one visible tattoo.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger" value="correct">False</button>'+
+    '<p><b>Rain or Shine</b> coffee is a cute shop neslted in SE off Division. Known for their eclectic variety of drinks, the Lavendar or Cardamom lattes are local favorites. What makes this shop unique though is that in order to qualify to be a barista, you must have at least one visible tattoo.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow7 = new google.maps.InfoWindow( {
@@ -175,43 +175,86 @@ var marker9 = new google.maps.Marker( {
 
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  })
 });
+
+// var answer = $('.btn').val();
+//   if (answer == 'correct'){
+//     alert("You got it!");
+//   } else {
+//     alert("Wah wah. Try again.");
+//   }
+
+
+
+
+
+
 
 marker2.addListener('click', function() {
   infowindow2.open(map, marker2);
+  var answer = $('.btn').val();
 });
 
 marker3.addListener('click', function() {
   infowindow3.open(map, marker3);
+  var answer = $('.btn').val();
 });
 
 marker4.addListener('click', function() {
   infowindow4.open(map, marker4);
+  var answer = $('.btn').val();
 });
 
 marker5.addListener('click', function() {
   infowindow5.open(map, marker5);
+  var answer = $('.btn').val();
 });
 
 marker6.addListener('click', function() {
   infowindow6.open(map, marker6);
+  var answer = $('.btn').val();
 });
 
 marker7.addListener('click', function() {
   infowindow7.open(map, marker7);
+  var answer = $('.btn').val();
 });
 
 marker8.addListener('click', function() {
   infowindow8.open(map, marker8);
+  var answer = $('.btn').val();
 });
 
 marker9.addListener('click', function() {
   infowindow9.open(map, marker9);
+  var answer = $('.btn').val();
 });
 
 };
 
 },{}],2:[function(require,module,exports){
+var callMap = require("./../js/map.js").initMap;
+
+
+$( document ).ready(function() {
+
+  $(".btn").click(function() {
+    var answer = $('.btn').val();
+    console.log(answer);
+  });
+
+
+
+});
+
 var callMap = require("./../js/map.js").initMap;
 
 $( document ).ready(function() {
@@ -253,7 +296,7 @@ var fact1 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading" class="firstHeading">Mount Tabor</h1>'+
     '<div id="bodyContent">'+
-    '<p><b>Mount Tabor</b>, is a volcano. Well it was. Portland is just one of two cities in the US that have a dormant volcano found within city limits. While there are no current predictions of it reawakening anytime soon, residents in the area are required by the state to have additional volcano coverage included in their homeowners insurance. Just in case.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger">False</button>'+
+    '<p><b>Mount Tabor</b>, is a volcano. Well it was. Portland is just one of two cities in the US that have a dormant volcano found within city limits. While there are no current predictions of it reawakening anytime soon, residents in the area are required by the state to have additional volcano coverage included in their homeowners insurance. Just in case.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow1 = new google.maps.InfoWindow( {
@@ -273,7 +316,7 @@ var fact2 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading2" class="firstHeading">Oregon Humane Society</h1>'+
     '<div id="bodyContent">'+
-    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>Oregon Humane Society</b>, marks the final resting place of Bobbie the Wonder Dog. Bobbie successfully navigated his way home after getting lost in Indiana! That is a 2800 mile trip!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
     '</div>';
 
 var infowindow2 = new google.maps.InfoWindow( {
@@ -291,7 +334,7 @@ var fact3 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading3" class="firstHeading">Willamette River</h1>'+
     '<div id="bodyContent3">'+
-    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>The Willamette River</b>, was home to possibly the first river boat brothel madam, Nancy Boggs.  It was said she had easy access to the entire area along the river, with a large client base as Portland did not yet have bridges in the late 1800s. She did not pay any taxes to the city.</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger" value="wrong answer">False</button>'+
     '</div>';
 
 var infowindow3 = new google.maps.InfoWindow( {
@@ -309,7 +352,7 @@ var fact4 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading4" class="firstHeading">Oaks Park</h1>'+
     '<div id="bodyContent4">'+
-    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success" value="correct">True</button><button class="btn btn-danger" value="wrong">False</button>'+
+    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success" value="correct answer">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow4 = new google.maps.InfoWindow( {
@@ -328,7 +371,7 @@ var fact5 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading5" class="firstHeading">Forest Park</h1>'+
     '<div id="bodyContent5">'+
-    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger" value="correct">False</button>'+
+    '<p><b>Forest Park</b> is the largest urban forest to be found in the United States. It is struggling with invasive ivy though. As Portland benefits from the beauty of this park, all citizens are charged with the task of removing any invasive ivy found on the trees. Park Rangers are always on hand with chalomine lotion as the invasive ivy and poison ivy look the same.</p>'+'<button class="btn btn-success" value="wrong answer">True</button><button class="btn btn-danger" value="correct answer">False</button>'+
     '</div>';
 
 var infowindow5 = new google.maps.InfoWindow( {
@@ -346,7 +389,7 @@ var fact6 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading6" class="firstHeading">Pittock Mansion</h1>'+
     '<div id="bodyContent6">'+
-    '<p><b>Pittock Mansion</b> is a French Renaissance-style château in the West Hills of Portland. The mansion was originally built in 1909 as a private home for London-born publisher Henry Pittock and his wife, Georgiana. It is said that the Mansion is haunted by the ghosts of Henry and Georgiana. Visitors have reported hearing mutterings and complaints about the influx of Californians to the city.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger" value="correct">False</button>'+
+    '<p><b>Pittock Mansion</b> is a French Renaissance-style château in the West Hills of Portland. The mansion was originally built in 1909 as a private home for London-born publisher Henry Pittock and his wife, Georgiana. It is said that the Mansion is haunted by the ghosts of Henry and Georgiana. Visitors have reported hearing mutterings and complaints about the influx of Californians to the city.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow6 = new google.maps.InfoWindow( {
@@ -364,7 +407,7 @@ var fact7 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading7" class="firstHeading">Rain or Shine</h1>'+
     '<div id="bodyContent7">'+
-    '<p><b>Rain or Shine</b> coffee is a cute shop neslted in SE off Division. Known for their eclectic variety of drinks, the Lavendar or Cardamom lattes are local favorites. What makes this shop unique though is that in order to qualify to be a barista, you must have at least one visible tattoo.</p>'+'<button class="btn btn-success" value="wrong">True</button><button class="btn btn-danger" value="correct">False</button>'+
+    '<p><b>Rain or Shine</b> coffee is a cute shop neslted in SE off Division. Known for their eclectic variety of drinks, the Lavendar or Cardamom lattes are local favorites. What makes this shop unique though is that in order to qualify to be a barista, you must have at least one visible tattoo.</p>'+'<button class="btn btn-success answer" value="wrong">True</button><button class="btn btn-danger answer" value="correct">False</button>'+
     '</div>';
 
 var infowindow7 = new google.maps.InfoWindow( {
@@ -416,38 +459,67 @@ var marker9 = new google.maps.Marker( {
 
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
+  $('.answer').click(function(currentButton){
+    var answer = currentButton.currentTarget.value;
+      if (answer == 'correct'){
+        alert("You got it!");
+      } else {
+        alert("Wah wah. Try again.");
+      }
+  })
 });
+
+// var answer = $('.btn').val();
+//   if (answer == 'correct'){
+//     alert("You got it!");
+//   } else {
+//     alert("Wah wah. Try again.");
+//   }
+
+
+
+
+
+
 
 marker2.addListener('click', function() {
   infowindow2.open(map, marker2);
+  var answer = $('.btn').val();
 });
 
 marker3.addListener('click', function() {
   infowindow3.open(map, marker3);
+  var answer = $('.btn').val();
 });
 
 marker4.addListener('click', function() {
   infowindow4.open(map, marker4);
+  var answer = $('.btn').val();
 });
 
 marker5.addListener('click', function() {
   infowindow5.open(map, marker5);
+  var answer = $('.btn').val();
 });
 
 marker6.addListener('click', function() {
   infowindow6.open(map, marker6);
+  var answer = $('.btn').val();
 });
 
 marker7.addListener('click', function() {
   infowindow7.open(map, marker7);
+  var answer = $('.btn').val();
 });
 
 marker8.addListener('click', function() {
   infowindow8.open(map, marker8);
+  var answer = $('.btn').val();
 });
 
 marker9.addListener('click', function() {
   infowindow9.open(map, marker9);
+  var answer = $('.btn').val();
 });
 
 };
