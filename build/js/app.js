@@ -4,12 +4,95 @@ exports.initMap = function() {
 
 var portland = {lat: 45.523452, lng: -122.676207};
 
-map = new google.maps.Map(document.getElementById('map'), {
+var mapOptions = {
+  mapTypeId: google.maps.MapTypeId.SATELLITE
+
+};
+
+var map = new google.maps.Map(document.getElementById('map'), {
   center: portland,
   zoom: 12
-
   });
 
+    // Create an array of styles.
+    var styles = [
+  {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "on" },
+      { "weight": 0.1 },
+      { "saturation": 57 },
+      { "lightness": 4 },
+      { "color": "#01A890" }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#F93A3B" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#F93A3B" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#AA6CBA" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#F93A3B" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#e9ef9d" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "color": "#c6c9c5" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "color": "#294D76" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
+
+    // Create a new StyledMapType object, passing it the array of styles,
+    // as well as the name to be displayed on the map type control.
+  //   var styledMap = new google.maps.StyledMapType(styles,
+  //     {name: "Styled Map"});
+  //
+  //   // Create a map object, and include the MapTypeId to add
+  //   // to the map type control.
+  //   var mapOptions = {
+  //     zoom: 11,
+  //     center: new google.maps.LatLng(55.6468, 37.581),
+  //     mapTypeControlOptions: {
+  //       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+  //     }
+  //   };
+  //   var map = new google.maps.Map(document.getElementById('map'),
+  //     mapOptions);
+  //
+  //   //Associate the styled map with the MapTypeId and set it to display.
+  //   map.mapTypes.set('map_style', styledMap);
+  //   map.setMapTypeId('map_style');
+  // }
 
 ///Mount Tabor
 var fact1 = '<div class="content">'+
@@ -76,7 +159,7 @@ var fact4 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading4" class="firstHeading">Oaks Park</h1>'+
     '<div id="bodyContent4">'+
-    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success answer" value="correct ">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow4 = new google.maps.InfoWindow( {
@@ -155,7 +238,7 @@ var fact8 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
     '<div id="bodyContent8 response">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ 
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -187,19 +270,10 @@ var marker9 = new google.maps.Marker( {
   map: map,
   title: ""
 });
-
 //////////END OF MARKER CODE/////////
 
-var trueFalse = function(currentButton){
-  var answer = currentButton.currentTarget.value;
-    if (answer == 'correct'){
-      alert("You got it!");
-    } else {
-      alert("Wah wah. Try again.");
-    }
-};
 
-
+/////Listeners//////
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
   $('.answer').click(function(currentButton){
@@ -289,7 +363,7 @@ marker8.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        $('.response').append("You got it!");
+        alert("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
@@ -322,12 +396,95 @@ exports.initMap = function() {
 
 var portland = {lat: 45.523452, lng: -122.676207};
 
-map = new google.maps.Map(document.getElementById('map'), {
+var mapOptions = {
+  mapTypeId: google.maps.MapTypeId.SATELLITE
+
+};
+
+var map = new google.maps.Map(document.getElementById('map'), {
   center: portland,
   zoom: 12
-
   });
 
+    // Create an array of styles.
+    var styles = [
+  {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "on" },
+      { "weight": 0.1 },
+      { "saturation": 57 },
+      { "lightness": 4 },
+      { "color": "#01A890" }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#F93A3B" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#F93A3B" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#AA6CBA" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#F93A3B" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#e9ef9d" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "color": "#c6c9c5" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "color": "#294D76" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
+
+    // Create a new StyledMapType object, passing it the array of styles,
+    // as well as the name to be displayed on the map type control.
+  //   var styledMap = new google.maps.StyledMapType(styles,
+  //     {name: "Styled Map"});
+  //
+  //   // Create a map object, and include the MapTypeId to add
+  //   // to the map type control.
+  //   var mapOptions = {
+  //     zoom: 11,
+  //     center: new google.maps.LatLng(55.6468, 37.581),
+  //     mapTypeControlOptions: {
+  //       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+  //     }
+  //   };
+  //   var map = new google.maps.Map(document.getElementById('map'),
+  //     mapOptions);
+  //
+  //   //Associate the styled map with the MapTypeId and set it to display.
+  //   map.mapTypes.set('map_style', styledMap);
+  //   map.setMapTypeId('map_style');
+  // }
 
 ///Mount Tabor
 var fact1 = '<div class="content">'+
@@ -394,7 +551,7 @@ var fact4 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading4" class="firstHeading">Oaks Park</h1>'+
     '<div id="bodyContent4">'+
-    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success answer" value="correct ">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<p><b>Oaks Park</b>, has been the "Coney Island of the Northwest" since 1905. A well loved attraction located just south of Portland proper, it is one of the oldest amusement parks in the US. It even has a skating rink! Did you know that it is actually illegal to get married in a skating rink? <a href="HTTP://voodoodoughnut.com/voodoo-doughnut-weddings.php">Donut shop?</a> Totally fine!</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow4 = new google.maps.InfoWindow( {
@@ -473,7 +630,7 @@ var fact8 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
     '<div id="bodyContent8 response">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ 
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -505,19 +662,10 @@ var marker9 = new google.maps.Marker( {
   map: map,
   title: ""
 });
-
 //////////END OF MARKER CODE/////////
 
-var trueFalse = function(currentButton){
-  var answer = currentButton.currentTarget.value;
-    if (answer == 'correct'){
-      alert("You got it!");
-    } else {
-      alert("Wah wah. Try again.");
-    }
-};
 
-
+/////Listeners//////
 marker1.addListener('click', function() {
   infowindow1.open(map, marker1);
   $('.answer').click(function(currentButton){
@@ -607,7 +755,7 @@ marker8.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        $('.response').append("You got it!");
+        alert("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }

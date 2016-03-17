@@ -5,17 +5,15 @@
 }
 
 body {
-  background-image: url(../img/carpet.png);
+  background-color: #274E77;
   background-repeat: none;
   background-size: contain;
 }
 
 .well {
+  background-image: url(../img/carpet.png);
   margin: 30px;
-    background-color: #ffffff;
-    opacity: 0.7;
-    filter: alpha(opacity=60);
-    text-align: center;
+  text-align: center;
 }
 
 .title {
