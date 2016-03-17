@@ -1,8 +1,11 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+
 exports.initMap = function() {
 
-var map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 45.523452, lng: -122.676207},
+var portland = {lat: 45.523452, lng: -122.676207};
+
+map = new google.maps.Map(document.getElementById('map'), {
+  center: portland,
   zoom: 12
 
   });
@@ -151,8 +154,8 @@ var fact8 = '<div class="content">'+
     '<div id="fact8">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
-    '<div id="bodyContent8">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<div id="bodyContent8 response">'+
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ 
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -172,7 +175,7 @@ var fact9 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -286,7 +289,7 @@ marker8.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        $('.response').append("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
@@ -298,30 +301,15 @@ marker9.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        $('.response').text("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
-
 };
 
 },{}],2:[function(require,module,exports){
-var callMap = require("./../js/map.js").initMap;
-
-
-$( document ).ready(function() {
-
-  $(".btn").click(function() {
-    var answer = $('.btn').val();
-    console.log(answer);
-  });
-
-
-
-});
-
 var callMap = require("./../js/map.js").initMap;
 
 $( document ).ready(function() {
@@ -329,31 +317,13 @@ $( document ).ready(function() {
 
 });
 
-function displayRoute() {
-
-    var start = "Portland, OR";
-    var end = "Seattle, Wa";
-
-    var directionsDisplay = new google.maps.DirectionsRenderer();// also, constructor can get "DirectionsRendererOptions" object
-    directionsDisplay.setMap(map); // map should be already initialized.
-
-    var request = {
-        origin : start,
-        destination : end,
-        travelMode : google.maps.TravelMode.DRIVING
-    };
-    var directionsService = new google.maps.DirectionsService();
-    directionsService.route(request, function(response, status) {
-        if (status == google.maps.DirectionsStatus.OK) {
-            directionsDisplay.setDirections(response);
-        }
-    });
-}
 
 exports.initMap = function() {
 
-var map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 45.523452, lng: -122.676207},
+var portland = {lat: 45.523452, lng: -122.676207};
+
+map = new google.maps.Map(document.getElementById('map'), {
+  center: portland,
   zoom: 12
 
   });
@@ -502,8 +472,8 @@ var fact8 = '<div class="content">'+
     '<div id="fact8">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
-    '<div id="bodyContent8">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<div id="bodyContent8 response">'+
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ 
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -523,7 +493,7 @@ var fact9 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -637,7 +607,7 @@ marker8.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        $('.response').append("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
@@ -649,13 +619,12 @@ marker9.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        $('.response').text("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
-
 };
 
 },{"./../js/map.js":1}]},{},[2]);

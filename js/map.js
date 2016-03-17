@@ -1,7 +1,10 @@
+
 exports.initMap = function() {
 
-var map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 45.523452, lng: -122.676207},
+var portland = {lat: 45.523452, lng: -122.676207};
+
+map = new google.maps.Map(document.getElementById('map'), {
+  center: portland,
   zoom: 12
 
   });
@@ -150,8 +153,8 @@ var fact8 = '<div class="content">'+
     '<div id="fact8">'+
     '</div>'+
     '<h1 id="firstHeading8" class="firstHeading">Collins Beach</h1>'+
-    '<div id="bodyContent8">'+
-    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+
+    '<div id="bodyContent8 response">'+
+    '<p><b>Collins Beach</b> is a popular destination for Portlanders in the summer. A little over a mile long many people can be seen playing in the Columbia River, catching some sun, and sometimes they are seen wearing nothing but a pirate hat! Part of Collins Beach is one of two Clothing Optional beachs in the state.</p>'+'<button class="btn btn-success answer" value="correct">True</button><button class="btn btn-danger answer" value="wrong">False</button>'+ 
     '</div>';
 
 var infowindow8 = new google.maps.InfoWindow( {
@@ -171,7 +174,7 @@ var fact9 = '<div class="content">'+
     '</div>'+
     '<h1 id="firstHeading9" class="firstHeading">Beaverton</h1>'+
     '<div id="bodyContent9">'+
-    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+
+    '<p><b>Beaverton</b> got its name from the large population of beavers in the area.  </p>'+'<button class="btn btn-success answer">True</button><button class="btn btn-danger answer">False</button>'+ '<div class="response">' + '<p></p>' + '</div>' +
     '</div>';
 
 var infowindow9 = new google.maps.InfoWindow( {
@@ -285,7 +288,7 @@ marker8.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        $('.response').append("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
@@ -297,11 +300,10 @@ marker9.addListener('click', function() {
   $('.answer').click(function(currentButton){
     var answer = currentButton.currentTarget.value;
       if (answer == 'correct'){
-        alert("You got it!");
+        $('.response').text("You got it!");
       } else {
         alert("Wah wah. Try again.");
       }
   });
 });
-
 };
